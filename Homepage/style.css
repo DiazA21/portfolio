@@ -7,7 +7,7 @@ body {
 
 .container {
     text-align: center;
-    /* background-color: black; */
+    background-color: black;
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -21,10 +21,13 @@ body {
 .name {
     margin-bottom: 20px;
     position: relative;
+    transition-property: display;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
 }
 
 .name h1 {
-    font-size: 3em;
+    font-size: 3.25em;
     margin: 5px 0;
 }
 
@@ -41,27 +44,26 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: whitesmoke;
     min-width: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: auto;
     top: 100%;
     left: 50%;
+  
     transform: translateX(-50%);
 }
 
-.name:hover .dropdown-content {
+.name:hover .dropdown-content{
     display: block;
-    border-radius: 5px;
-    
+    font-size: 1.25em;
 }
 
 .dropdown-content a {
-    columns: white;
+    
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    color: black;
+    color: whitesmoke;
 }
 
 a:hover {
@@ -71,3 +73,4 @@ a:hover {
 a:active {
     color: #466ff3;
 }
+
