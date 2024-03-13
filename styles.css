@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+:root {
+    --salmon: var(#F4989C);
+    --lightCyan: var(#DFFDFF);
+    --powderBlue: var(#90BEDE);
+    --aquamarine: var(#68EDC6);
+    --electricBlue: var(#90F3FF)
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
