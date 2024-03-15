@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
+/* Main Colours */
 :root {
     --salmon: var(#F4989C);
     --lightCyan: var(#DFFDFF);
     --powderBlue: var(#90BEDE);
     --aquamarine: var(#68EDC6);
-    --electricBlue: var(#90F3FF)
+    --electricBlue: var(#90F3FF);
+
+    --powderBlueGlow: rgba(143, 189, 222,0.75);
 
 }
 
