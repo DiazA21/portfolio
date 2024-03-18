@@ -1,22 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 
 /* Main Colours */
 :root {
-    --salmon: var(#F4989C);
-    --lightCyan: var(#DFFDFF);
-    --powderBlue: var(#90BEDE);
-    --aquamarine: var(#68EDC6);
-    --electricBlue: var(#90F3FF);
+  --salmon: #f4989c;
+  --lightCyan: #dffdff;
+  --powderBlue: #90bede;
+  --aquamarine: #68edc6;
+  --electricBlue: #90f3ff;
 
-    --powderBlueGlow: rgba(143, 189, 222,0.75);
-
+  --powderBlueGlow: rgba(143, 189, 222, 0.75);
+  --aquamarineGlow: rgba(104, 237, 198, 0.75);
+  --electricBlueGlow: rgb(144, 243, 255, 0.75);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Nav Bar */
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--lightCyan);
+  overflow: hidden;
+  z-index: 999;
+}
+
+.nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  list-style-type: none;
+}
+
+.nav-right li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 14px 16px;
+}
+
+.nav-right li a:hover {
+  background-color: var(--powderBlueGlow);
+}
+
+/* Hero Section */
+
+.hero-container {
+  background-color: var(--lightCyan);
+  top: 100;
+  bottom: 100;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
 }
