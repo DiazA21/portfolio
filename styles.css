@@ -7,6 +7,9 @@
   --powderBlue: #90bede;
   --aquamarine: #68edc6;
   --electricBlue: #90f3ff;
+  --black: #000000;
+  --orange: #ffb510;
+  --yellow: #e9d856;
 
   --powderBlueGlow: rgba(143, 189, 222, 0.75);
   --aquamarineGlow: rgba(104, 237, 198, 0.75);
@@ -20,6 +23,16 @@
   font-family: "Titillium Web", sans-serif;
   font-weight: 400;
   font-style: normal;
+  /* overflow: hidden; */
+}
+
+/* Section Headers */
+
+.highlight {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 190px;
+  font-size: 32px;
 }
 
 /* Nav Bar */
@@ -53,11 +66,289 @@
 
 /* Hero Section */
 
+/* Hero - Title & Role */
+
 .hero-container {
   background-color: var(--lightCyan);
-  top: 100;
-  bottom: 100;
-  height: 100%;
-  margin: 0;
+  top: 50;
+  width: 100%;
+  height: 100vh;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   overflow: hidden;
+
+  .box {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .title {
+      width: 85%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .block {
+        width: 0%;
+        height: inherit;
+        background: var(--salmon);
+        position: absolute;
+        animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+        display: flex;
+      }
+
+      h1 {
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: var(--black);
+        font-size: 32px;
+        -webkit-animation: mainFadeIn 2s forwards;
+        -o-animation: mainFadeIn 2s forwards;
+        animation: mainFadeIn 2s forwards;
+        animation-delay: 1.6s;
+        opacity: 0;
+        display: flex;
+        align-items: baseline;
+        position: relative;
+
+        span {
+          width: 0px;
+          height: 0px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          background: var(--orange);
+          -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92)
+            forwards;
+          animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+          animation-delay: 2s;
+          margin-left: 5px;
+          margin-top: -10px;
+          position: absolute;
+          bottom: 13px;
+          right: -12px;
+        }
+      }
+    }
+
+    .role {
+      width: 80%;
+      height: 35px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-top: 0px;
+      margin-left: 10px;
+
+      .block {
+        width: 0%;
+        height: inherit;
+        background: var(--aquamarine);
+        position: absolute;
+        animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+        animation-delay: 2s;
+        display: flex;
+      }
+
+      h2 {
+        animation: secFadeIn 2s forwards;
+        animation-delay: 3.2s;
+        opacity: 0;
+        color: var(--black);
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+      }
+    }
+  }
+}
+
+@keyframes mainBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes secBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    width: 0px;
+    height: 0px;
+    background: var(--yellow);
+    border: 0px solid #000000;
+    opacity: 0;
+  }
+
+  50% {
+    width: 10px;
+    height: 10px;
+    background: var(--aquamarine);
+    opacity: 1;
+    bottom: 20px;
+  }
+
+  65% {
+    width: 7px;
+    height: 7px;
+    bottom: 0px;
+  }
+
+  80% {
+    width: 10px;
+    height: 10px;
+    bottom: 20px;
+  }
+
+  100% {
+    width: 7px;
+    height: 7px;
+    background: var(--salmon);
+    border: 0px solid #222;
+    bottom: 12px;
+  }
+}
+
+@keyframes secFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* Hero - Profile */
+
+.profile {
+  display: inline-block;
+  white-space: wrap;
+  overflow: hidden;
+  margin-right: 40px;
+  width: 0px;
+  animation: reveal 20s forwards;
+  animation-delay: 3.3s;
+}
+
+.profile span {
+  margin-left: 0px;
+  animation: slideIn 20s none;
+}
+
+@keyframes slideIn {
+  0% {
+    margin-left: -800px;
+  }
+
+  20% {
+    margin-left: -800px;
+  }
+
+  35% {
+    margin-left: 0px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+
+  20% {
+    opacity: 1;
+    width: 355px;
+  }
+
+  40% {
+    opacity: 1;
+    width: 355px;
+  }
+
+  60% {
+    opacity: 1;
+    width: 355px;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    width: 355px;
+  }
+}
+
+/* Skills Section */
+
+#skills {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tool-tip {
+  display: none;
+}
+
+.skills-left .skills-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
