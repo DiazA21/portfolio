@@ -14,6 +14,7 @@
   --powderBlueGlow: rgba(143, 189, 222, 0.75);
   --aquamarineGlow: rgba(104, 237, 198, 0.75);
   --electricBlueGlow: rgb(144, 243, 255, 0.75);
+  --lightcyanGlow: rgba(223, 253, 255, 0.75);
 }
 
 * {
@@ -43,7 +44,7 @@ html {
 
 /* Nav Bar */
 
-.nav-bar {
+nav {
   /* position: sticky; */
   top: 0;
   left: 0;
@@ -53,7 +54,7 @@ html {
   width: 100%;
 }
 
-.nav-bar ul {
+.nav-links {
   display: flex;
   flex-direction: row;
   float: right;
@@ -72,16 +73,81 @@ html {
   background-color: var(--powderBlueGlow);
 }
 
+/* Hamburger */
+
+nav .hamburger-nav {
+  display: none;
+}
+
+.hamburger {
+  background-color: var(--lightCyan);
+  width: 100%;
+}
+
+.hamburger-btn {
+  display: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  top: 0;
+  float: right;
+  padding: 14px 16px;
+}
+
+@media (max-width: 768px) {
+  /* Hide the default nav links and show the hamburger button */
+
+  nav .nav-links {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: block;
+  }
+
+  /* Style the hamburger navigation menu */
+
+  nav .hamburger-nav.open {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    float: left;
+    transition: all 300ms ease-in-out;
+    width: 100%;
+    background-color: var(--powderBlue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  nav .hamburger-nav li a {
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 22px;
+    color: inherit;
+    padding: 10px;
+    z-index: 100;
+  }
+
+  nav .hamburger-nav li a:hover {
+    background-color: var(--lightcyanGlow);
+    color: var(--salmon);
+  }
+}
+
 /* Hero Section */
 
 /* Hero - Title & Role */
 
 .hero-container {
   background-color: var(--lightCyan);
-  top: 50;
+  top: 0;
   width: 100%;
   height: 100vh;
-  margin-top: -50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -338,6 +404,12 @@ html {
     width: 355px;
   }
 }
+
+/* Responsive Hero */
+
+/* @media (max-width: 768px) {
+
+} */
 
 /* Skills Section */
 
