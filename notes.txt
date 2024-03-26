@@ -1,0 +1,7 @@
+Challenges:
+CSS - Moving elements to exactly where I want to
+- Media queries
+
+Improvements
+Better media queries to respond to mobile tap and swipe events.
+Contact-section needs to be responsive
