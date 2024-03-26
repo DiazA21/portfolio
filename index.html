@@ -289,14 +289,13 @@
       </div>
 
       <div class="bio">
-        With expertise spanning
-        Python, Database Management Systems, and web development,
-        I'm on the hunt for opportunities that allow me to dive deeper into
-        data-driven solutions, and full-stack projects. Eager to contribute my
-        skills to projects that drive innovation and deliver results, I'm
-        excited to explore new avenues in <span>software development</span>. Let's team up
-        and create something extraordinary. Dive deeper into my journey
-        <a href="#about">here</a>.
+        With expertise spanning Python, Database Management Systems, and web
+        development, I'm on the hunt for opportunities that allow me to dive
+        deeper into data-driven solutions, and full-stack projects. Eager to
+        contribute my skills to projects that drive innovation and deliver
+        results, I'm excited to explore new avenues in
+        <span>software development</span>. Let's team up and create something
+        extraordinary. Dive deeper into my journey <a href="#about">here</a>.
       </div>
     </div>
   </section>
@@ -304,23 +303,23 @@
   <!-- Projects section -->
   <section id="projects">
     <h2 class="highlight">Projects</h2>
-
     <div class="projects-container">
-      <div class="project1">
+      <div class="project-card project1">
         <h3>Project 1</h3>
         <!-- Inbed project within span -->
         <span class="p1"></span>
         <p class="p1">Project details</p>
       </div>
 
-      <div class="project2">
+      <div class="project-card project2">
         <h3>Project 2</h3>
         <!-- Inbed project within span -->
         <span class="p2"></span>
         <p class="p2">Project details</p>
+        <button class="link"><a href="">Read More</a></button>
       </div>
 
-      <div class="project3">
+      <div class="project-card project3">
         <h3>Project 3</h3>
         <!-- Inbed project within span -->
         <span class="p3"></span>
@@ -331,17 +330,17 @@
 
   <!-- About -->
   <section id="about">
+    <h2 class="highlight">About Me</h2>
     <div class="about-container">
-      <h2 class="highlight">About Me</h2>
       <div class="about-me">
         <p>
-          Hey there, I'm Andrew, a junior software developer fueled by a blend
-          of curiosity and determination. With a passion for problem-solving
-          and a background in engineering, my journey into coding began during
-          my undergrad, where I dabbled in pseudocode and embedded systems.
-          Over time, my fascination with programming grew, leading me to
-          explore languages like C++ and Python. Despite career twists and
-          turns, I've remained committed to honing my skills.
+          Hey there, I'm Andrew, an aspiring software developer fueled by a
+          blend of curiosity and determination. With a passion for
+          problem-solving and a background in engineering, my journey into
+          coding began during my undergrad, where I dabbled in pseudocode and
+          embedded systems. Over time, my fascination with programming grew,
+          leading me to explore languages like C++ and Python. Despite career
+          twists and turns, I've remained committed to honing my skills.
         </p>
       </div>
     </div>
@@ -350,24 +349,46 @@
   <!-- Contact Form / Button-->
 
   <section id="contact">
+    <h2 class="highlight">Contact Me</h2>
     <div class="contact-container">
-      <h2 class="highlight">Contact Me</h2>
       <p>
         Thank you for visiting my portfolio, if you'd like to contact me,
+        <br />
         please fill out the form below.
       </p>
-      <form action="action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+      <div class="contact-form">
+        <form action="#">
+          <div class="input-box">
+            <div class="input-field field">
+              <input type="text" placeholder="Full Name" id="name" autocomplete="off" class="item" />
+              <div class="error-text">Field cannot be left blank!</div>
+            </div>
+            <div class="input-field field">
+              <input type="text" placeholder="Email Address" id="email" autocomplete="off" class="item" />
+              <div class="error-text email">Field cannot be left blank!</div>
+            </div>
+          </div>
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+          <div class="input-box">
+            <div class="input-field field">
+              <input type="text" placeholder="Phone Number" id="phone" autocomplete="off" class="item" />
+              <div class="error-text">Field cannot be left blank!</div>
+            </div>
+            <div class="input-field field">
+              <input type="text" placeholder="Subject" id="subject" autocomplete="off" class="item" />
+              <div class="error-text">Field cannot be left blank!</div>
+            </div>
+          </div>
 
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Shoot me a message.." style="height: 200px"></textarea>
+          <div class="textarea-field field">
+            <textarea type="text" name="message" id="message" rows="10" cols="30" placeholder="Shoot me a message!"
+              class="item" autocomplete="off"></textarea>
+            <div class="error-text">Field cannot be left blank!</div>
+          </div>
 
-        <input type="submit" value="Submit" />
-      </form>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -376,17 +397,16 @@
   <footer>
     <div class="footer-container">
       <div class="name">
-        <a href="/index.html">Andrew<br />
+        <a href="">Andrew<br />
           Conte<br />
           Diaz</a>
       </div>
 
       <div class="links">
         <ul>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
       </div>
 
@@ -409,13 +429,14 @@
             <path fill="#000000" d="M22 4H2v16h20zm-2 4l-8 5l-8-5V6l8 5l8-5z" />
           </svg></a>
       </div>
+      <div class="copyright">Made By Andrew C Diaz &#169;</div>
     </div>
-
-    <div class="copyright">Made By Andrew C Diaz &#169;</div>
   </footer>
 
   <script src="/js/script.js"></script>
   <script src="https://unpkg.com/css-doodle@0.17.2/css-doodle.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

@@ -15,6 +15,7 @@
   --aquamarineGlow: rgba(104, 237, 198, 0.75);
   --electricBlueGlow: rgba(144, 244, 255, 0.315);
   --lightcyanGlow: rgba(223, 253, 255, 0.75);
+  --salmonGlow: rgba(244, 152, 156, 0.75);
 }
 
 * {
@@ -80,6 +81,20 @@ html {
     position: relative;
     top: 50%;
     left: 5%;
+  }
+}
+
+@media (max-width: 429px) {
+  .highlight {
+    position: relative;
+    left: -30%;
+  }
+}
+
+@media (max-width: 376px) {
+  .highlight {
+    position: relative;
+    left: -30%;
   }
 }
 
@@ -469,8 +484,9 @@ nav .hamburger-nav {
   }
 }
 
-.socials a svg:hover {
+.socials svg:hover {
   background-color: var(--lightcyanGlow);
+  transition: 0.2s ease-in-out;
 }
 
 /* Responsive Hero */
@@ -631,9 +647,33 @@ nav .hamburger-nav {
   }
 }
 
+@media (max-width: 428px) {
+  .skills-container {
+    height: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+
+  .skills-left {
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: space-around;
+    width: 400px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
 /* Projects */
 
 /* About Me */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .about-me {
   left: 50%;
@@ -644,9 +684,168 @@ nav .hamburger-nav {
   max-width: 80%;
   width: 1200px;
   height: 400px;
+  padding: 10px 10px;
 }
 
-.about-me p {
+/* Contact Me */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid white;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); */
+  width: 1200px;
+  height: fit-content;
   padding: 10px 10px;
+}
+
+.contact-container p {
+  font-size: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-form form {
+  width: 1200px;
+  text-align: center;
+}
+
+form .input-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-box .input-field {
+  width: 48.5%;
+}
+
+input[type="text"]:focus {
+  background-color: var(--lightcyanGlow);
+  border: 3px solid var(--black);
+}
+textarea[type="text"]:focus {
+  background-color: var(--lightcyanGlow);
+  border: 3px solid var(--black);
+}
+
+.field .item {
+  width: 100%;
+  padding: 18px;
+  background: transparent;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  color: var(--black);
+  margin: 12px 0;
+}
+
+.field.error .item {
+  border-color: red;
+}
+
+.field .item::placeholder {
+  color: var(--black);
+}
+
+.field .error-text {
+  font-size: 16px;
+  color: red;
+  text-align: left;
+  margin: -5px 0 10px;
+  display: none;
+}
+
+.field.error .error-text {
+  display: block;
+}
+
+form .textarea-field .item {
+  resize: none;
+}
+
+form .textarea-field .error-text {
+  margin-top: -10px;
+}
+
+form button {
+  padding: 12px 32px;
+  background: var(--salmonGlow);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+form button:hover {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 429px) {
+  /* Adjust the following based on your design preferences */
+  .contact-container {
+    padding: 2rem 1rem;
+  }
+
+  .input-field,
+  .textarea-field {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+
+  .input-box {
+    margin-bottom: 1rem;
+  }
+
+  .contact-form form .error-text {
+    margin-left: 0;
+  }
+}
+
+.footer-container {
+  background-color: var(--powderBlue);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.footer-container .name a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+}
+
+.links li {
+  list-style-type: none;
+}
+
+.links li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  padding: 4px 6%;
 }
