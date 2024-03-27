@@ -707,7 +707,7 @@ nav .hamburger-nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-image: url(/pages/Projects/To-Do-List.gif);
+  background-image: url(pages/Projects/To-Do-List.gif);
   background-position: top;
   background-repeat: no-repeat;
   background-size: auto 100%;
