@@ -1,0 +1,97 @@
+/* Reset */
+
+:root {
+  --salmon: #f4989c;
+  --lightCyan: #dffdff;
+  --powderBlue: #90bede;
+  --aquamarine: #68edc6;
+  --electricBlue: #90f3ff;
+  --black: #000000;
+  --orange: #ffb510;
+  --yellow: #e9d856;
+
+  --powderBlueGlow: rgba(143, 189, 222, 0.75);
+  --aquamarineGlow: rgba(104, 237, 198, 0.75);
+  --electricBlueGlow: rgba(144, 244, 255, 0.315);
+  --lightcyanGlow: rgba(223, 253, 255, 0.75);
+  --salmonGlow: rgba(244, 152, 156, 0.75);
+}
+
+main {
+  display: grid;
+  max-width: 1100px;
+  margin: auto;
+  padding: clamp(6vh, 2rem, 12vh) 1rem 22vh;
+  padding-top: 0 !important;
+  gap: 30px;
+  font-size: 25px;
+}
+
+.container {
+  padding-bottom: 30px;
+}
+
+.title h1 {
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.intro b {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  /* border: 1p solid white;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); */
+}
+
+.info-container div {
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 22px;
+}
+
+.info-container h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.info-container ul {
+  list-style-type: none;
+}
+
+.info-container a {
+  color: var(--salmon);
+  text-decoration: none;
+}
+
+.main-screen img {
+  max-width: 1100px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.motiv-container h2,
+.func-container h2,
+.challenges-container h2,
+.achievements-container h2,
+.improvements-container h2 {
+  margin-left: -25px;
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.func-container {
+  align-items: center;
+}
+
+.func-container ul {
+  padding-top: 10px;
+  padding-left: 40px;
+}
