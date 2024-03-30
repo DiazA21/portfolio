@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../Portfolio-Website/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/case.css" />
+    <script src="https://kit.fontawesome.com/aa09fdd343.js"></script>
+    <title>FilmFlix App</title>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav>
+        <div class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="https://diaza21.github.io/portfolio/">Home</a></li>
+                <li><a href="https://diaza21.github.io/portfolio/#skills">Skills</a></li>
+                <li><a href="https://diaza21.github.io/portfolio/#projects">Projects</a></li>
+                <li><a href="https://diaza21.github.io/portfolio/#about">About</a></li>
+                <li>
+                    <a href="../AndrewDiaz_JuniorSoftwareDev.pdf" target="_blank">My CV</a>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Hamburger for nav-bar -->
+        <button class="hamburger-btn">☰</button>
+        <div class="hamburger" aria-label="Open navigation menu">
+            <div class="nav-socials">
+                <a href="https://github.com/DiazA21" target="_blank" aria-label="github link"><svg
+                        xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 80 80">
+                        <path fill="#b6c9d6"
+                            d="M76.999,40.001c0,17.44-12.02,31.86-27.97,35.89c-2.9,0.72-5.92,1.11-9.03,1.11 c-3.08,0-6.09-0.38-8.97-1.1c-15.98-4-28.03-18.44-28.03-35.9c0-20.6,16.4-37,37-37C60.599,3.001,76.999,19.401,76.999,40.001z">
+                        </path>
+                        <circle cx="39.999" cy="40.001" r="37" fill="none"></circle>
+                        <path fill="#fff"
+                            d="M64.029,38.521c0,4.49-2.32,10.73-6.13,13.83c-3.08,2.51-7.15,3.3-11.75,3.55 c1.73,1.05,2.88,2.95,2.88,5.12v14.87c-2.9,0.72-5.92,1.11-9.03,1.11c-3.08,0-6.09-0.38-8.97-1.1v-9.77 c-1.25,0.39-2.89,0.62-5,0.51c-7-0.37-8-4.62-9.12-7.62c-1.13-3-4.63-3.38-4.13-4.62c2.416-0.829,4.314-0.039,5.597,0.938 c1.018,0.776,1.728,1.871,2.203,3.06c0.543,1.358,1.986,3.622,5.57,3.622c2.53,0,4.03-0.59,4.89-1.17 c0.05-2.12,1.21-3.96,2.91-4.97c-4.88-0.31-9.16-1.23-12.31-3.97c-3.5-3.04-5.61-9.11-5.61-13.39c0-3.57,1.47-7.97,3.99-10.74 c0.08-0.08,0.15-0.17,0.25-0.25c-0.58-1.74-1.25-5.18,0.38-9.39c4.85-0.09,8.68,2.56,10.24,3.84c2.82-0.65,5.9-0.96,9.14-0.96 c3.32,0,6.49,0.29,9.36,0.96c1.56-1.28,5.4-3.93,10.24-3.83c1.7,4.38,0.91,7.93,0.32,9.59 C62.529,30.711,64.029,34.921,64.029,38.521z">
+                        </path>
+                        <path fill="#788b9c"
+                            d="M39.999,3.001c-20.6,0-37,16.4-37,37s16.78,37,37,37s37-16.4,37-37S60.599,3.001,39.999,3.001z M39.999,76.001c-19.85,0-36-16.15-36-36c0-9.7,3.72-18.76,10.48-25.52c6.76-6.76,15.83-10.48,25.52-10.48 c9.7,0,18.76,3.72,25.52,10.48c6.76,6.76,10.48,15.82,10.48,25.52C75.999,59.851,59.849,76.001,39.999,76.001z">
+                        </path>
+                    </svg></a>
+
+                <a href="https://www.linkedin.com/in/andrewcdiaz/" target="_blank" aria-label="linkedin link"><svg
+                        xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                        <path fill="#0288D1"
+                            d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
+                        </path>
+                        <path fill="#FFF"
+                            d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z">
+                        </path>
+                    </svg></a>
+
+                <a href="mailto:andrewdiaz1993@gmail.com" aria-label="email link"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                        <path fill="#0080ff" d="M22 4H2v16h20zm-2 4l-8 5l-8-5V6l8 5l8-5z" />
+                    </svg></a>
+            </div>
+            <ul class="hamburger-nav">
+                <li><a href="https://diaza21.github.io/portfolio/">Home</a></li>
+                <li><a href="https://diaza21.github.io/portfolio/#skills">Skills</a></li>
+                <li><a href="https://diaza21.github.io/portfolio/#projects">Projects</a></li>
+                <li><a href="https://diaza21.github.io/portfolio/#about">About</a></li>
+                <li>
+                    <a href="../AndrewDiaz_JuniorSoftwareDev.pdf" target="_blank">My CV</a>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="title">
+        <h1 class="highlight">FilmFlix Python App</h1>
+    </div>
+    <main>
+        <!-- Introduction -->
+        <section id="introduction">
+            <div class="container">
+                <div class="intro">
+                    <p>
+                        I'm thrilled to share the journey behind the development of my FilmFlix Python application.
+                        Unlike the conventional movie streaming platforms, FilmFlix is a <b>terminal-based application
+                        </b>that I conceptualized to provide users with a unique and seamless movie browsing experience.
+                        Though currently confined to the terminal, my vision for FilmFlix extends beyond, with
+                        aspirations to transform it into a full-fledged web or desktop application in the future.
+                    </p>
+                </div>
+            </div>
+            <div class="info-container">
+                <div>
+                    <h2>Type</h2>
+                    <div>Personal Project</div>
+                </div>
+
+                <div>
+                    <h2>Tech Used</h2>
+                    <div>
+                        <ul>
+                            <li>Python</li>
+                            <li>SQLite</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Code</h2>
+                    <div>
+                        <a href="https://github.com/DiazA21/FilmFlix_project" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Live</h2>
+                    <div><a href="https://replit.com/@AndrewD40/filmFlix-App" target="_blank">Site</a></div>
+                </div>
+            </div>
+            <div class="main-screen">
+                <img src="../pages/Projects/filmFlix main.png" alt="Main Screen" />
+            </div>
+        </section>
+
+        <!-- Motivations-->
+        <section id="motiv">
+            <div class="motiv-container">
+                <h2 class="highlight">Project Motivations</h2>
+                <p>Movies have always been a huge part of my life, and I wanted to create something that would make it
+                    easier for people to discover and enjoy films. FilmFlix is for anyone who loves movies but finds it
+                    overwhelming to navigate through countless options. It's for the casual moviegoer looking for a
+                    weekend flick and the cinephile searching for hidden gems. My goal was to create a platform that
+                    caters to both seasoned movie buffs and casual viewers alike.</p>
+            </div>
+        </section>
+        <!-- Functionality -->
+        <section id="func">
+            <div class="func-container">
+                <h2 class="highlight">Project Functionality</h2>
+                <p>FilmFlix offers users a range of features to enhance their movie browsing experience:
+
+                <ul>
+                    <li>Powered by SQLite, FilmFlix houses a diverse collection of films, complete with details like
+                        title, genre, release year, and synopsis. </li>
+                    <li>Users can easily search for movies based on various criteria such as title, genre, or keywords,
+                        making it effortless to find exactly what they're looking for.</li>
+                    <li>Despite being a terminal application, FilmFlix boasts a clean and intuitive interface designed
+                        for easy navigation and interaction.</li>
+                </ul>
+                </p>
+            </div>
+        </section>
+
+        <!-- Challenges Faced -->
+        <section id="challenges">
+            <div class="challenges-container">
+                <h2 class="highlight">Challenges Faced</h2>
+                <p>As a beginner software developer, creating FilmFlix presented several challenges:
+                <ul>
+                    <li>Working with databases was new to me, and I had to invest time and effort into understanding how
+                        to manage data effectively using SQLite.</li>
+                    <li>Designing a user-friendly interface within the limitations of the terminal environment was a
+                        creative challenge. I had to find ways to make the app visually appealing and easy to use
+                        despite the constraints.</li>
+                    <li>Ensuring that the search functionality could handle large datasets efficiently was another
+                        hurdle. I had to experiment with different techniques to optimize performance without
+                        sacrificing accuracy.</li>
+                </ul>
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Achievements -->
+        <section id="achievements">
+            <div class="achievements-container">
+                <h2 class="highlight">Achievements</h2>
+                <p>I'm proud to highlight the accomplishments attained through the development of FilmFlix. Successfully
+                    implementing SQLite database management enabled users to access a comprehensive movie database.
+                    Additionally, the intuitive user interface design facilitated seamless navigation within the
+                    terminal environment. Furthermore, the optimization of search functionality ensured swift and
+                    accurate results, enhancing the overall user experience. These achievements underscore my dedication
+                    to delivering a functional and user-centric application.
+                </p>
+            </div>
+        </section>
+
+        <!-- Future Improvements -->
+        <section id="improvements">
+            <div class="improvements-container">
+                <h2 class="highlight">Future Improvements</h2>
+                <p>There are several improvements I plan to make to FilmFlix:
+                    <br>
+                <ul>
+                    <li>I'm eager to expand FilmFlix into a full-fledged web or desktop
+                        application, providing users with a more immersive movie browsing experience.</li>
+                    <li>I plan to introduce personalized recommendations, user reviews, and social
+                        sharing features to make FilmFlix even more engaging and interactive.</li>
+                    <li>I'll continue to refine and optimize the app to ensure smooth performance,
+                        even with larger datasets and increased user activity.</li>
+                </ul>
+                <br>
+                In conclusion, FilmFlix is more than just a project for me; it's a testament to my passion for
+                movies and my commitment to creating innovative solutions. As I continue to evolve and improve
+                FilmFlix, I look forward to sharing it with the world and making movie discovery a delightful
+                experience for everyone, regardless of their technical prowess.
+                </p>
+            </div>
+        </section>
+
+        <!-- Video Showcase -->
+        <section class="video">
+            <div>
+                <video width="1100px" controls src="">
+                    Your browser does not support the video tag
+                </video>
+            </div>
+        </section>
+
+
+    </main>
+    <!-- Contact Form / Button-->
+    <section id="contact">
+        <h2 class="highlight">Contact Me</h2>
+        <div class="contact-container">
+            <p>
+                Thank you for visiting my portfolio, if you'd like to contact me,
+                <br />
+                please fill out the form below.
+            </p>
+            <div class="contact-form">
+                <form action="#">
+                    <div class="input-box">
+                        <div class="input-field field">
+                            <input type="text" placeholder="Full Name" id="name" autocomplete="off" class="item" />
+                            <div class="error-text">Field cannot be left blank!</div>
+                        </div>
+                        <div class="input-field field">
+                            <input type="text" placeholder="Email Address" id="email" autocomplete="off" class="item" />
+                            <div class="error-text email">Field cannot be left blank!</div>
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <div class="input-field field">
+                            <input type="text" placeholder="Phone Number" id="phone" autocomplete="off" class="item" />
+                            <div class="error-text">Field cannot be left blank!</div>
+                        </div>
+                        <div class="input-field field">
+                            <input type="text" placeholder="Subject" id="subject" autocomplete="off" class="item" />
+                            <div class="error-text">Field cannot be left blank!</div>
+                        </div>
+                    </div>
+
+                    <div class="textarea-field field">
+                        <textarea type="text" name="message" id="message" rows="10" cols="30"
+                            placeholder="Shoot me a message!" class="item" autocomplete="off"></textarea>
+                        <div class="error-text">Field cannot be left blank!</div>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="name">
+                <a href="https://diaza21.github.io/portfolio/">Andrew<br />
+                    Conte<br />
+                    Diaz</a>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li><a href="https://diaza21.github.io/portfolio/#skills">Skills</a></li>
+                    <li><a href="https://diaza21.github.io/portfolio/#projects">Projects</a></li>
+                    <li><a href="https://diaza21.github.io/portfolio/#about">About</a></li>
+                </ul>
+            </div>
+
+            <div class="get-in-touch">
+                <h3>Get in touch</h3>
+                <a href="https://github.com/DiazA21" target="_blank" aria-label="github link"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#000000"
+                            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2" />
+                    </svg></a>
+
+                <a href="https://www.linkedin.com/in/andrewcdiaz/" target="_blank" aria-label="linkedin link"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#000000"
+                            d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" />
+                    </svg></a>
+
+                <a href="mailto:andrewdiaz1993@gmail.com" aria-label="email link"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#000000" d="M22 4H2v16h20zm-2 4l-8 5l-8-5V6l8 5l8-5z" />
+                    </svg></a>
+            </div>
+            <div class="copyright">Made By Andrew C Diaz &#169;</div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="https://unpkg.com/css-doodle@0.17.2/css-doodle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
