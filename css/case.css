@@ -91,7 +91,9 @@ main {
   align-items: center;
 }
 
-.func-container ul {
+.func-container ul,
+.challenges-container ul,
+.improvements-container ul {
   padding-top: 10px;
   padding-left: 40px;
 }
