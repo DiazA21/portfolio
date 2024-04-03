@@ -565,13 +565,13 @@ nav .hamburger-nav {
 }
 
 .skills-left svg {
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   border-radius: 20px;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   width: 150px;
   height: 150px;
   padding: 5px 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
 }
 
 .skills-left svg:hover {
